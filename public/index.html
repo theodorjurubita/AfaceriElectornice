@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <title>Catalog Produse</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/script.js"></script>
+    
+        <!-- Bootstrap CSS File  -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+    <!-- Bootstrap JS file -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="container">
+	<header>
+        <section id="logo">
+            <h1>
+                Catalog Produse
+            </h1>
+        </section>
+        <section id="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/admin/" target="_blank">Admin</a></li>
+                <li><a href="/nodeadmin/" target="_blank">Database</a></li>
+            </ul>
+        </section>
+	</header>
+    <main>
+        <section>
+            <section class="sidebar left">
+                <ul id="categories">
+
+                </ul>
+            </section>
+            <section id="content">
+                
+            </section>
+            <section class="sidebar right">
+                <a href="views/cart.html"><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button></a>
+                <h3>
+                    We value our customers.
+                </h3>
+                <p>
+                    Happy shopping!
+                </p>
+            </section>
+        </section>
+    </main>
+    <footer>
+            Copyright &copy; 2019
+    </footer>
+</div>
+
+<div class="modal fade" id="view_product" tabindex="-1" role="dialog" aria-labelledby="myModalLabelProduct">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabelProduct">Vizualizare produs</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container" id="product-section">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 id='title'></h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span class="label label-primary" id='categorieProdus'></span>
+                                <span class="monospaced" id='idProduct'></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="description" id='descriereProdus'></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 bottom-rule">
+                                <h2 class="product-price" id='pretProdus'></h2>
+                            </div>
+                        </div>
+
+                        <div class="row add-to-cart">
+                            <div class="col-md-2 product-qty">
+                                <span class="btn btn-default btn-lg btn-qty" id='plusProdus'>
+                                   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                </span>
+                                <input class="btn btn-default btn-lg btn-qty" id='cantitateProduse' value="1" />
+                                <span class="btn btn-default btn-lg btn-qty" id='minusProdus'>
+                                   <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-lg btn-brand btn-full-width" id="btnAddToCard">
+                                   Add to Cart
+                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
